@@ -1,7 +1,7 @@
 .header {
   position: relative;
   z-index: 1;
-  background: #FFFFFF;
+  background: #f2f2f3;
   box-shadow: 0px 1px 20px rgba(72, 3, 38, 0.07);
   padding: 28px 0;
 }
@@ -18,7 +18,7 @@
   gap: 30px;
 }
 
-.button {
+/* .button {
   width: 300px;
   height: 65px;
   border-radius: 30px;
@@ -27,11 +27,33 @@
   font-size: 18px;
   background-color: #00c78b;
   color: white;
-}
+} */
 
+.button {
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 30px;
+  width: 300px;
+  height: 60px;
+  border: none;
+  background-image: linear-gradient(45deg, #6ab1d7 0%, #33d9de 50%, #002878 100%);
+  background-position: 100% 0;
+  background-size: 200% 200%;
+  font-weight: 700;
+  font-size: 18px;
+  font-weight: 300;
+  color: white;
+  box-shadow: 0 16px 32px 0 rgba(0, 40, 120, .35);
+  transition: .5s;
+}
 .button:disabled {
   background-color: rgb(173, 209, 209);
   cursor: unset;
+}
+
+.button:hover:enabled {
+  box-shadow: 0 0 0 0 rgba(0, 40, 120, 0);
+  background-position: 0 0;
 }
 
 @media (max-width: 1024px) {

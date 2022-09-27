@@ -12,8 +12,8 @@ const Footer = () => (
       <div className={style.wrapper}>
         <div className={style.contacts}>
           <p>Design: <a href='https://t.me/Mrshamallowww'>Anastasia Ilina</a></p>
-          <p>Coder: </p>
-          <p>© HBCard, 2022</p>
+          <p>Coder: <a className={style.blueText} href='https://t.me/id0ntmind'>id0ntmind</a></p>
+          <p>©petProj, 2022</p>
         </div>
         <ul className={style.social}>
           <li className={style.item}>
