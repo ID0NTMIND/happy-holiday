@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchHolidays, setHoliday } from '../../../store/holidaysSlice';
+import { fetchImage } from '../../../store/imageSlice';
 import { fetchText } from '../../../store/textSlice';
 import style from './Choices.module.css'
 
@@ -36,6 +37,7 @@ const Choices = () => {
               onClick={() => {
                 dispatch(setHoliday(item[0]));
                 dispatch(fetchText(item[0]));
+                dispatch(fetchImage(item[0]));
                 toggleChoices();
               }}
             >
